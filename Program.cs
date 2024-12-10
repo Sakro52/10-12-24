@@ -7,22 +7,15 @@ using System.Threading.Tasks;
 namespace _10_12_24
 {
     /// <summary>
-    /// Подсичать кол-во число 5 в одномерном массиве 
+    /// Удалить все четные элементы из одномерного масива
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
             int[] omas = { 5,7,1,9,5,3,6,5,4 };
-            int count = 0;
-            foreach(var el in omas)
-            {
-                if (el == 5)
-                {
-                    count++;
-                }
-            }
-            Console.WriteLine(count);
+            omas=omas.Where(x=>x %2!=0).ToArray();
+            Console.WriteLine(omas);
             Console.ReadLine();
         }
     }
