@@ -13,13 +13,9 @@ namespace _10_12_24
         static void Main(string[] args)
         {
 
-            int[] omas = { 5,7,1,9,5,3,5,};
-            omas=omas.Where(x=>x %2!=0).ToArray();
-            Console.WriteLine("Нечетные элм масива");
-            foreach(var el in omas)
-            {
-                Console.Write($"{omas}\t");
-            }
+            int[] omas = { 5, 7, 1, 9, 5, 3, 5, };
+            int sum = omas.Sum();
+            Console.WriteLine("Сумма всех чисел массива: " + sum);
             Console.ReadLine();
         }
     }
