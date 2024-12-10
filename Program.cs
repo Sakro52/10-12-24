@@ -14,15 +14,25 @@ namespace _10_12_24
         static void Main(string[] args)
         {
             int[] omas = { 5,7,1,9,5,3,6,5,4 };
-            int count = 0;
-            foreach(var el in omas)
-            {
-                if (el == 5)
-                {
-                    count++;
-                }
-            }
+            
+            //Первый способ
+            
+             //int count = 0;
+            //foreach(var el in omas)
+            //{
+            //    if (el == 5)
+            //    {
+            //        count++;
+            //    }
+            //}
+            //Console.WriteLine(count);
+
+            //Второй способ
+            
+            int count = omas.Count(x => x == 5);
             Console.WriteLine(count);
+
+
             Console.ReadLine();
         }
     }
