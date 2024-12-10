@@ -7,23 +7,22 @@ using System.Threading.Tasks;
 namespace _10_12_24
 {
     /// <summary>
-    /// Отсортировать массив по взростанию и убыванию 
+    /// Подсичать кол-во число 5 в одномерном массиве 
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            string[] people = { "Tom", "Sam", "Bob", "Kate", "Tom", "Alice" };
-            Array.Sort(people);
-            foreach(var el in people)
+            int[] omas = { 5,7,1,9,5,3,6,5,4 };
+            int count = 0;
+            foreach(var el in omas)
             {
-                Console.WriteLine(el);
+                if (el == 5)
+                {
+                    count++;
+                }
             }
-            Array.Reverse(people);
-            foreach (var el in people)
-            {
-                Console.WriteLine(el);
-            }
+            Console.WriteLine(count);
             Console.ReadLine();
         }
     }
