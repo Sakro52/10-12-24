@@ -15,7 +15,7 @@ namespace _10_12_24
 
             int[] omas = { 5, 7, 1, 9, 5, 3, 5, };
             int sum = omas.Sum();
-            Console.WriteLine("Сумма всех чисел массива: " + sum);
+            Console.WriteLine($"Сумма всех чисел массива:{sum}");
             Console.ReadLine();
         }
     }
