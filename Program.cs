@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace _10_12_24
 {
     /// <summary>
@@ -13,9 +12,14 @@ namespace _10_12_24
     {
         static void Main(string[] args)
         {
-            int[] omas = { 5,7,1,9,5,3,6,5,4 };
+
+            int[] omas = { 5,7,1,9,5,3,5,};
             omas=omas.Where(x=>x %2!=0).ToArray();
-            
+            Console.WriteLine("Нечетные элм масива");
+            foreach(var el in omas)
+            {
+                Console.Write($"{omas}\t");
+            }
             Console.ReadLine();
         }
     }
